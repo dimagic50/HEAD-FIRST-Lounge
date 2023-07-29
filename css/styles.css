@@ -25,7 +25,7 @@ h2  {
   /* 130% of small, inherited from <body> */
   font-size: 130%;
 }
-.guarantee {
+#guarantee {
   /* background */
   background-image: url(../images/background.gif);
   background-repeat: no-repeat;
@@ -33,11 +33,10 @@ h2  {
   background-color: #a7cece;
 
   /* border */
-  border-color: black;
   border-width: 1px;
   border-style: dashed;
   border-color: white;
-
+  
   /* padding */
   padding: 25px;
   padding-left: 80px;
