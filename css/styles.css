@@ -1,31 +1,55 @@
 body  {
   /*
-    Questa famiglia di font sarà ereditata
-    da tutti gli elementi
+    default font-size for the whole page. I use a sans-serif font family. I choose some font alternatives and conclude the declaration with the generic sans-serif font. My PC will load Liberation Sans font, as it can't find Verdana, Helvetica, Arial...
   */
-  font-family: sans-serif;
+  font-size: small;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  line-height: 1.6em; /* 1.6 times small */
 }
 
 h1, h2 {
-  color: gray;
+  /* I set the color of the <h1> and <h2> elements to an aquamarine for match   the glass in the logo. */
+
+  color: #007eb5;
 }
 
+/* 
+Now I get some reasonable header sizes for <h1> and <h2>. Since I set two different sizes for these, I need separate rules and can't add them to the combined rule for <h1> and <h2>.
+*/
 h1 {
-  border-bottom: 1px solid black;
-}
-    
-p {
-  color: maroon;
+  /* 150% of small, inherited from <body> */
+  font-size: 150%;
 }
 
-p.greentea  {
-  color: green;
+h2  {
+  /* 130% of small, inherited from <body> */
+  font-size: 130%;
 }
+.guarantee {
+  /* background */
+  background-image: url(../images/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: #a7cece;
 
-p.raspberry {
-  color: blue;
-}
+  /* border */
+  border-color: black;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: white;
 
-p.blueberry {
-  color: purple;
+  /* padding */
+  padding: 25px;
+  padding-left: 80px;
+
+  /* margin */
+  margin: 30px;
+  margin-right: 250px;
+
+  /* text */
+  color: #444444;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  line-height: 1.9em;
+  text-align: justify;
 }
